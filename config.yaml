@@ -31,6 +31,8 @@ params:
       name: Email
       url: mailto:jorden.williams.1989@gmail.com
 
+ignoreFiles:
+  ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
 markup:
   goldmark:
     renderer:
