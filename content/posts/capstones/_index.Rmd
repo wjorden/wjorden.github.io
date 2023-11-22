@@ -1,0 +1,9 @@
+---
+slug: capstone-index
+url: /capstones/
+title: Capstone Listing
+layout: list
+date: 2023-11-21
+---
+
+### [Goole Data Analytics Capstone](import/)
