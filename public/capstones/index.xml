@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Capstone Listing on Jorden Williams</title>
+    <link>https://wjorden.github.io/capstones/</link>
+    <description>Recent content in Capstone Listing on Jorden Williams</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 21 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://wjorden.github.io/capstones/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Food Import Cost Case Study</title>
+      <link>https://wjorden.github.io/posts/capstones/google-data-analytics/</link>
+      <pubDate>Sun, 12 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://wjorden.github.io/posts/capstones/google-data-analytics/</guid>
+      <description>PURPOSE I chose this topic as there are a lot that goes into the production of food. My concern was raised as I noticed that people with various disorders are struggling to get the food items they can have. By this I mean, people with Crohn’s disease, restrictive diets due to genetics (dysautonomia, EDS, ANS, etc), as well as many others. Medications can make the lack of proper foods tolerable, but it does not solve the overall issue they have.</description>
+    </item>
+  </channel>
+</rss>
