@@ -53,6 +53,8 @@ params:
 ignoreFiles:
   ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
   
+enableGitInfo: true
+
 markup:
   goldmark:
     renderer:
