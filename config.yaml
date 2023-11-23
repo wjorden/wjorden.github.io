@@ -1,5 +1,5 @@
 baseURL: https://wjorden.github.io
-title: Jorden Williams
+title: Case Studies
 theme: hugo-theme-m10c
 paginate: 8
 menu:
@@ -12,26 +12,29 @@ menu:
       name: Tags
       url: /tags/
       weight: 2
-    - identifier: capstone
-      name: Capstones
-      url: /capstones/
-      weight: 2
-    - identifier: sql
-      name: SQL
-      url: /sql/
-      weight: 2
-    - identifier: demo
-      name: Demos
-      url: /demos/
-      weight: 2
-    - indentifier: excel
-      name: Excel
-      url: /excel/
-      weight: 2
     - identifier: about
       name: About
       url: /about/
       weight: 3
+    - identifier: contact
+      name: Contact
+      url: /contact/
+   # - identifier: capstone
+   #   name: Capstones
+   #   url: /capstones/
+   #   weight: 2
+   # - identifier: sql
+   #    name: SQL
+   #    url: /sql/
+   #    weight: 2
+   # - identifier: demo
+   #   name: Demos
+   #   url: /demos/
+   #   weight: 2
+   # - indentifier: excel
+   #   name: Excel
+   #   url: /excel/
+   #   weight: 2
 params:
   author: Jorden Williams
   description: Where data becomes a story.
