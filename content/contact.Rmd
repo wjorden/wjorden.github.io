@@ -1,0 +1,11 @@
+---
+title: Contact
+---
+
+Is your data looking a little... grey? Tired of trying to make sense of what you have? Just need some help finding what you're looking for?
+
+Then answer is easy. Click the envelope in the navigation bar and send an email.
+
+Do you have a long term project you need help with?
+
+Then simply click on the LinkedIn link and send a message there. 
