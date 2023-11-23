@@ -2,12 +2,12 @@
 slug: google-data-analytics
 title: Food Import Cost Case Study
 date: 2023-11-12
-lastmod: 2023-11-21
+lastmod: '`r format(Sys.Date(), "%Y-%M-%D")`'
 categories: ["R"]
 tags: ["R", "ggplot"]
 ---
 
-I chose this topic as there is a lot that goes into the production of food. My concern was raised as I noticed that people with various disorders are struggling to get the food items they can have. By this I mean, people with Crohn's disease, restrictive diets due to genetics (dysautonomia, EDS, ANS, etc), as well as many others. Medications can make the lack of proper foods tolerable, but it does not solve the overall issue they have.
+This topic was chosen as there is a lot that goes into the production of food. A level of concern was raised as it became obvious that people with various disorders are struggling to get the food items they can have. By this it is meant, those with Crohn's disease, restrictive diets due to genetics (dysautonomia, EDS, ANS, etc), as well as many others. Medications can make the lack of proper foods tolerable, but it does not solve the overall issue they have.
 <!--more-->
 # Week 1
 
@@ -33,13 +33,13 @@ The main question, why does food cost so much? To answer this question, we need 
 
 ## Let's begin
 
-Time to start gathering the data sets. Charts will appear in the order made in the order of the data sets. If more data sets are listed than there are charts, then I have not finished going through the data.
+Time to start gathering the data sets. Charts will appear in the order made in the order of the data sets. If more data sets are listed than there are charts, then the initial exploration of the data is not done.
 
-Well, we have two charts made showing the breakdown of imported goods and the year-over-year change in cost. I'm not sure which is more concerning. The spikes in import price or the amount of food still needed to be imported. Further review will be needed to provide, not only context, but an explanation as to why we saw such a sharp increase.
+Well, we have two charts made showing the breakdown of imported goods and the year-over-year change in cost. The spikes in import price or the amount of food still needed to be imported raises some concern. Further review will be needed to provide, not only context, but an explanation as to why we saw such a sharp increase.
 
 # End of Week 1 Update
 
-The data is immense. As of right now, I'm still restructuring some of the data for it to be more accessible for visualization. The Vegetables and Pulses Yearbook, while extensive (50+ tables), is structured for spreadsheet use. I still have a lot of restructuring to do, so until then... Have a happy holiday!
+The data is immense. As of right now, the data still requires some restructuring for it to be more accessible for visualization. The Vegetables and Pulses Yearbook, while extensive (50+ tables), is structured for spreadsheet use. Have a happy holiday!
 
 # Week 2
 
