@@ -2,7 +2,7 @@
 slug: google-data-analytics
 title: Food Import Cost Case Study
 date: 2023-11-12
-lastmod: '`r format(Sys.Date(), "%Y-%M-%D")`'
+lastmod: ["lastmod", ":git", "date", "publishDate"]
 categories: ["R"]
 tags: ["R", "ggplot"]
 ---
