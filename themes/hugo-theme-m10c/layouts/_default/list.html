@@ -6,12 +6,33 @@
         <li class="posts-list-item">
           <a class="posts-list-item-title" href="{{ .Permalink }}">{{ .Title }}</a>
           <span class="posts-list-item-description">
+            <!-- Calendar Icon and Date Posting -->
             {{ partial "icon.html" (dict "ctx" $ "name" "calendar") }}
-            {{ .PublishDate.Format "Jan 2, 2006" }}
-            <span class="posts-list-item-separator">-</span>
-            {{ partial "icon.html" (dict "ctx" $ "name" "clock") }}
-            {{ .ReadingTime }} min read
+            {{- $pubdate := .PublishDate.Format "Jan 2, 2006" }}
+            <!-- If lastmod is set in frontmatter -->
+            {{- $lastmod := .Lastmod.Format "Jan 2, 2006" }}
+            <!-- if lastmod and pubdate are the same -->
+            {{- if eq $pubdate $lastmod }}
+              {{ $pubdate }}
+            {{- else }}
+            <!-- if not the same, display it -->
+              {{ $pubdate }}&emsp; <strong>Last Updated:</strong> &nbsp; {{ $lastmod }}
+            {{ end }}
+            <span class="posts-list-item-separator"></span>
+            <!-- Display Read Time -->
+            {{- $min_read_time := 5 }}
+            {{- $read_time := .ReadingTime }}
+            <!-- if read_time <= min_read_time -->
+            {{- if le $read_time $min_read_time}}
+            <!-- display nothing -->
+            {{- else }}
+            <!-- otherwise, display read time -->
+              {{ partial "icon.html" (dict "ctx" $ "name" "clock") }}
+              {{ $read_time }} min read
+            {{ end }}
           </span>
+          <!-- print summary -->
+          {{ .Summary }}
         </li>
       {{ end }}
     </ul>

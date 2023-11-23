@@ -5,12 +5,28 @@
       {{- if ne .Type "page" }}
       <div class="post-meta">
         <div>
+          <!-- Calendar Icon and Date Posting-->
           {{ partial "icon.html" (dict "ctx" $ "name" "calendar") }}
-          {{ .PublishDate.Format "Jan 2, 2006" }}
+          {{- $pubdate := .PublishDate.Format "Jan 2, 2006" }}
+          <!-- If lastmod is set in frontmatter -->
+          {{- $lastmod := .Lastmod.Format "Jan 2, 2006" }}
+          <!-- if lastmod and pubdate are the same -->
+          {{- if eq $pubdate $lastmod }}
+            {{ $pubdate }}
+          {{- else }}
+          <!-- if not the same, display it -->
+            {{ $pubdate }}&emsp; <strong>Last Updated:</strong> &nbsp; {{ $lastmod }}
+          {{ end }}
         </div>
         <div>
-          {{ partial "icon.html" (dict "ctx" $ "name" "clock") }}
-          {{ .ReadingTime }} min read
+          {{- $min_read_time := 5 }}
+          {{- $read_time := .ReadingTime }}
+          {{- if le $read_time $min_read_time}}
+          
+          {{- else }}
+            {{ partial "icon.html" (dict "ctx" $ "name" "clock") }}
+            {{ $read_time }} min read
+          {{ end }}
         </div>
         {{- with .Params.tags }}
         <div>
