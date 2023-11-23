@@ -2,13 +2,13 @@
 slug: google-data-analytics
 title: Food Import Cost Case Study
 date: 2023-11-12
-lastmod: "2023-11-20"
+lastmod: 2023-11-21
 categories: ["R"]
 tags: ["R", "ggplot"]
 ---
-# PURPOSE
-I chose this topic as there are a lot that goes into the production of food. My concern was raised as I noticed that people with various disorders are struggling to get the food items they can have. By this I mean, people with Crohn's disease, restrictive diets due to genetics (dysautonomia, EDS, ANS, etc), as well as many others. Medications can make the lack of proper foods tolerable, but it does not solve the overall issue they have.
 
+I chose this topic as there is a lot that goes into the production of food. My concern was raised as I noticed that people with various disorders are struggling to get the food items they can have. By this I mean, people with Crohn's disease, restrictive diets due to genetics (dysautonomia, EDS, ANS, etc), as well as many others. Medications can make the lack of proper foods tolerable, but it does not solve the overall issue they have.
+<!--more-->
 # Week 1
 
 ## Setup
