@@ -16,9 +16,9 @@ menu:
       name: About
       url: /about/
       weight: 3
-    - identifier: contact
-      name: Contact
-      url: /contact/
+    # - identifier: contact
+    #   name: Contact
+    #   url: /contact/
    # - identifier: capstone
    #   name: Capstones
    #   url: /capstones/
