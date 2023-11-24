@@ -2,8 +2,6 @@
 title: About
 ---
 
-Jorden has been working with data for as long as he can remember. It was only recently that he took interest in the more artistic side of it. He has come to call this, "data beautification".
+I am a data analysis and caregiving professional with a Google Data Analytics Certificate and multiple courses on data fundamentals, data-driven decision making, and data preparation. I have acquired skills in PostgreSQL, databases, and spreadsheets, and I can collect, clean, analyze, and visualize data to solve real-world problems and create value for organizations and communities. I am currently working on my Google Advanced Data Analytics Certificate.
 
-Jorden started out in the US Marine Corps where the main skills are accountability, adaptability, and teamwork. After his exit from active duty, he went into retail where the key focus is attention to detail, time management, and communication. Eventually, he made his way to being a General Manager of a restaurant. All of the skills he picked up, from data analyzation to critical thinking and research, showed him his love for data. The stories it can tell go deeper than any book ever could.
-
-Now, he is looking forward to helping people achieve the best possible outcome with the data they have. From making better decisions in purchases to businesses providing service for the people. He is here to help.
+I have also demonstrated my leadership and management skills as a General Manager at Papa Johns, where I trained shift managers, worked with the Area Manager, completed weekly inventory and sales data, and created staff schedules. Prior to that, I was a Day Shift Manager, responsible for daily opening processes, product and supply orders, and customer service. Currently, I am providing quality care and support to clients with diverse needs and backgrounds as a Personal Care Assistant. I am passionate about helping others and improving their well-being through attentive and compassionate service.
