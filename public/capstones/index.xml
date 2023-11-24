@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Capstone Listing on Jorden Williams</title>
+    <title>Capstone Listing on Case Studies</title>
     <link>https://wjorden.github.io/capstones/</link>
-    <description>Recent content in Capstone Listing on Jorden Williams</description>
+    <description>Recent content in Capstone Listing on Case Studies</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 21 Nov 2023 00:00:00 +0000</lastBuildDate>
@@ -13,7 +13,15 @@
       <link>https://wjorden.github.io/posts/capstones/google-data-analytics/</link>
       <pubDate>Sun, 12 Nov 2023 00:00:00 +0000</pubDate>
       <guid>https://wjorden.github.io/posts/capstones/google-data-analytics/</guid>
-      <description>PURPOSE I chose this topic as there are a lot that goes into the production of food. My concern was raised as I noticed that people with various disorders are struggling to get the food items they can have. By this I mean, people with Crohn’s disease, restrictive diets due to genetics (dysautonomia, EDS, ANS, etc), as well as many others. Medications can make the lack of proper foods tolerable, but it does not solve the overall issue they have.</description>
+      <description>&lt;script src=&#34;https://wjorden.github.io/posts/capstones/google-data-analytics/index_files/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://wjorden.github.io/posts/capstones/google-data-analytics/index_files/plotly-binding/plotly.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://wjorden.github.io/posts/capstones/google-data-analytics/index_files/typedarray/typedarray.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://wjorden.github.io/posts/capstones/google-data-analytics/index_files/jquery/jquery.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://wjorden.github.io/posts/capstones/google-data-analytics/index_files/crosstalk/css/crosstalk.min.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://wjorden.github.io/posts/capstones/google-data-analytics/index_files/crosstalk/js/crosstalk.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://wjorden.github.io/posts/capstones/google-data-analytics/index_files/plotly-htmlwidgets-css/plotly-htmlwidgets.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://wjorden.github.io/posts/capstones/google-data-analytics/index_files/plotly-main/plotly-latest.min.js&#34;&gt;&lt;/script&gt;
+&lt;p&gt;This topic was chosen as there is a lot that goes into the production of food. A level of concern was raised as it became obvious that people with various disorders are struggling to get the food items they can have. By this it is meant, those with Crohn’s disease, restrictive diets due to genetics (dysautonomia, EDS, ANS, etc), as well as many others. Medications can make the lack of proper foods tolerable, but it does not solve the overall issue they have.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
