@@ -15,7 +15,7 @@ This topic was chosen as there is a lot that goes into the production of food. A
 ```{r setup, include=FALSE}
 knitr::opts_knit$set(root.dir='.')
 ```
-The libraries to use:
+The libraries in use:
 ```{r message=FALSE, warning=FALSE}
 library(tidyverse)
 library(ggplot2)
@@ -45,6 +45,10 @@ The data is immense. As of right now, the data still requires some restructuring
 
 The line chart is the average of imported vegetables and pulses available by US pounds per person. It was made using ggplot2 and a custom data frame.
 
+# End of Week 2
+
+Upon further review, there are a lot of missing pieces. Namely, trade agreements. While we have import costs, this would be offset by trades with respective countries. For example, exporting wheat to import avocados. 
+
 # Data sets
 
 [Food Imports](https://www.ers.usda.gov/data-products/u-s-food-imports/)\
@@ -59,7 +63,7 @@ The line chart is the average of imported vegetables and pulses available by US 
 ![US Imported Food YoY (Spreadsheet)](img/US-Imported-Food-Price-Change.png)
 
 Of course, we need some R plots.
-```{r, echo=TRUE, message=FALSE, warning=FALSE}
+```{r echo=TRUE, out.height=400, out.width=500, message=FALSE, warning=FALSE}
 pc <- read_xlsx('datasets/VPPT.xlsx', sheet=3)
 avg <- setNames(aggregate(pc$Value, list(pc$Year), mean), c("year", "value"))
 
@@ -67,16 +71,14 @@ avg <- setNames(aggregate(pc$Value, list(pc$Year), mean), c("year", "value"))
 p <- ggplot(avg, aes(year, value)) +
   geom_line() +
   labs(title="Average Vegetables and Pulses Per Person") +
-  ylab('Pounds per Person') + xlab('Year')
+  ylab('Weight per Person (lbs)') + xlab('Year')
 
 ggplotly(p)
+
 ```
 (interactive ggplot with custom data frame using second data set sheet 3)
 
-```{r echo=FALSE, message=FALSE, warning=FALSE}
-df <- read_xlsx('datasets/VPPT.xlsx', sheet=3)
 
-```
 
 ## Additional Questions
 
