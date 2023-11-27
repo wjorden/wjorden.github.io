@@ -6,8 +6,15 @@
     <description>Recent content on Case Studies</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 21 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Nov 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://wjorden.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>KeyError Problems</title>
+      <link>https://wjorden.github.io/key-error/</link>
+      <pubDate>Mon, 27 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://wjorden.github.io/key-error/</guid>
+      <description>During my schooling, cleaning was really only covered regarding spreadsheets. Even in the advanced courses, where python dominates, there is little coverage on what using pre-compiled datasets and handling any problems you come across. So, as I run into them, I will be logging them here and other posts as required depending on the error type.</description>
+    </item>
     <item>
       <title>Food Import Cost Case Study</title>
       <link>https://wjorden.github.io/posts/capstones/google-data-analytics/</link>
@@ -28,8 +35,8 @@
       <link>https://wjorden.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://wjorden.github.io/about/</guid>
-      <description>Jorden has been working with data for as long as he can remember. It was only recently that he took interest in the more artistic side of it. He has come to call this, &amp;ldquo;data beautification&amp;rdquo;.
-Jorden started out in the US Marine Corps where the main skills are accountability, adaptability, and teamwork. After his exit from active duty, he went into retail where the key focus is attention to detail, time management, and communication.</description>
+      <description>I am a data analysis and caregiving professional with a Google Data Analytics Certificate and multiple courses on data fundamentals, data-driven decision making, and data preparation. I have acquired skills in PostgreSQL, databases, and spreadsheets, and I can collect, clean, analyze, and visualize data to solve real-world problems and create value for organizations and communities. I am currently working on my Google Advanced Data Analytics Certificate.
+I have also demonstrated my leadership and management skills as a General Manager at Papa Johns, where I trained shift managers, worked with the Area Manager, completed weekly inventory and sales data, and created staff schedules.</description>
     </item>
     <item>
       <title>Contact</title>
@@ -37,7 +44,7 @@ Jorden started out in the US Marine Corps where the main skills are accountabili
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://wjorden.github.io/contact/</guid>
       <description>Is your data looking a little&amp;hellip; green? Is staring at the dataset making you see red? Just need some help finding what you&amp;rsquo;re looking for?
-Then answer is easy. Click the envelope in the navigation bar and send an email.
+The answer is easy. Click the envelope in the navigation bar and send an email.
 Do you have a long term project you need help with?
 Then simply click on the LinkedIn link and send a message.</description>
     </item>

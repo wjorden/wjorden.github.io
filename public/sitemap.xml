@@ -2,11 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://wjorden.github.io/</loc>
+    <lastmod>2023-11-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wjorden.github.io/data-cleaning/</loc>
+    <lastmod>2023-11-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wjorden.github.io/key-error/</loc>
+    <lastmod>2023-11-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wjorden.github.io/tags/keyerrors/</loc>
+    <lastmod>2023-11-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wjorden.github.io/posts/</loc>
+    <lastmod>2023-11-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wjorden.github.io/tags/python/</loc>
+    <lastmod>2023-11-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wjorden.github.io/tags/quick-fix/</loc>
+    <lastmod>2023-11-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://wjorden.github.io/tags/</loc>
+    <lastmod>2023-11-27T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://wjorden.github.io/capstones/</loc>
     <lastmod>2023-11-22T12:53:40-05:00</lastmod>
-  </url><url>
-    <loc>https://wjorden.github.io/</loc>
-    <lastmod>2023-11-23T13:59:48-05:00</lastmod>
   </url><url>
     <loc>https://wjorden.github.io/demos/</loc>
     <lastmod>2023-11-23T13:49:43-05:00</lastmod>
@@ -14,34 +35,27 @@
     <loc>https://wjorden.github.io/excel/</loc>
     <lastmod>2023-11-23T13:49:43-05:00</lastmod>
   </url><url>
-    <loc>https://wjorden.github.io/posts/</loc>
-    <lastmod>2023-11-23T13:59:48-05:00</lastmod>
-  </url><url>
     <loc>https://wjorden.github.io/sql/</loc>
     <lastmod>2023-11-23T13:49:43-05:00</lastmod>
   </url><url>
-    <loc>https://wjorden.github.io/categories/</loc>
-    <lastmod>2023-11-23T13:59:48-05:00</lastmod>
-  </url><url>
     <loc>https://wjorden.github.io/posts/capstones/google-data-analytics/</loc>
-    <lastmod>2023-11-23T13:59:48-05:00</lastmod>
+    <lastmod>2023-11-26T11:34:06-05:00</lastmod>
   </url><url>
     <loc>https://wjorden.github.io/tags/ggplot/</loc>
-    <lastmod>2023-11-23T13:59:48-05:00</lastmod>
+    <lastmod>2023-11-26T11:34:06-05:00</lastmod>
   </url><url>
     <loc>https://wjorden.github.io/tags/r/</loc>
-    <lastmod>2023-11-23T13:59:48-05:00</lastmod>
+    <lastmod>2023-11-26T11:34:06-05:00</lastmod>
   </url><url>
-    <loc>https://wjorden.github.io/categories/r/</loc>
-    <lastmod>2023-11-23T13:59:48-05:00</lastmod>
-  </url><url>
-    <loc>https://wjorden.github.io/tags/</loc>
-    <lastmod>2023-11-23T13:59:48-05:00</lastmod>
+    <loc>https://wjorden.github.io/tags/statistics/</loc>
+    <lastmod>2023-11-26T11:34:06-05:00</lastmod>
   </url><url>
     <loc>https://wjorden.github.io/about/</loc>
-    <lastmod>2023-11-23T14:10:57-05:00</lastmod>
+    <lastmod>2023-11-24T12:23:56-05:00</lastmod>
+  </url><url>
+    <loc>https://wjorden.github.io/categories/</loc>
   </url><url>
     <loc>https://wjorden.github.io/contact/</loc>
-    <lastmod>2023-11-23T14:41:22-05:00</lastmod>
+    <lastmod>2023-11-24T12:27:24-05:00</lastmod>
   </url>
 </urlset>
