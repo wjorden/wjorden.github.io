@@ -6,7 +6,7 @@ date: 2023-11-27
 lastmod: ["lastmod", ":git", "date", "publishDate"]
 ---
 
-During my schooling, cleaning was really only covered regarding spreadsheets. Even in the advanced courses, where python dominates, there is little coverage on what using pre-compiled datasets and handling any problems you come across. So, as I run into them, I will be logging them here and other posts as required depending on the error type.
+During my schooling, cleaning was really only covered regarding spreadsheets. Even in the advanced courses, where python dominates, there is little coverage on what to be on the look out for when using pre-compiled datasets and handling any problems you come across. So, as I run into them, I will be logging them here and other posts as required depending on the error type.
 
 <!--more-->
 
