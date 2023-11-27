@@ -12,9 +12,10 @@
           {{- $lastmod := .Lastmod.Format "Jan 2, 2006" }}
           <!-- if lastmod and pubdate are the same -->
           {{- if eq $pubdate $lastmod }}
+          <!-- Only print the publish date -->
             {{ $pubdate }}
           {{- else }}
-          <!-- if not the same, display it -->
+          <!-- if not the same, display Lastmod -->
             {{ $pubdate }}&emsp; <strong>Last Updated:</strong> &nbsp; {{ $lastmod }}
           {{ end }}
         </div>
