@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Quick Fix on Case Studies</title>
+    <link>https://wjorden.github.io/tags/quick-fix/</link>
+    <description>Recent content in Quick Fix on Case Studies</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 27 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://wjorden.github.io/tags/quick-fix/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>KeyError Problems</title>
+      <link>https://wjorden.github.io/key-error/</link>
+      <pubDate>Mon, 27 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://wjorden.github.io/key-error/</guid>
+      <description>During my schooling, cleaning was really only covered regarding spreadsheets. Even in the advanced courses, where python dominates, there is little coverage on what using pre-compiled datasets and handling any problems you come across. So, as I run into them, I will be logging them here and other posts as required depending on the error type.</description>
+    </item>
+  </channel>
+</rss>
