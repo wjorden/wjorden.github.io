@@ -3,12 +3,12 @@ slug: google-data-analytics
 title: Food Import Cost Case Study
 date: 2023-11-12
 lastmod: ["lastmod", ":git", "date", "publishDate"]
-categories: ["R"]
-tags: ["R", "ggplot"]
+tags: ["R", "ggplot", "python", "statistics"]
 ---
 
 This topic was chosen as there is a lot that goes into the production of food. A level of concern was raised as it became obvious that people with various disorders are struggling to get the food items they can have. By this it is meant, those with Crohn's disease, restrictive diets due to genetics (dysautonomia, EDS, ANS, etc), as well as many others. Medications can make the lack of proper foods tolerable, but it does not solve the overall issue they have.
 <!--more-->
+
 # Week 1
 
 ## Setup
@@ -27,7 +27,7 @@ library(readxl)
 1)  Find the data set(s) for food production costs (first place to look is USDA)\
 2)  Find the data set(s) for consumer cost of the items (USDA?)\
 3)  Start plotting the costs against each other (Smooth vs Bar charts)\
-4)  Figure out the pattern in the data (likely going to have go back over the course of a few years)
+4)  Figure out the pattern in the data (likely going to have go back over the course of a few years (on returning, apparently decades))
 
 The main question, why does food cost so much? To answer this question, we need a few bits of data to start with. Those data sets are, the current cost to produce (e.g. grow fruits) and/or manufacture (e.g. process grains) the food items. From there, we need to get a data set for the cost to consumers of these same items. Considering that I live in the United States, I'll be working with those data sets first.
 
@@ -62,7 +62,7 @@ Upon further review, there are a lot of missing pieces. Namely, trade agreements
 
 ![US Imported Food YoY (Spreadsheet)](img/US-Imported-Food-Price-Change.png)
 
-Of course, we need some R plots.
+Of course, we need some R plots. Sheet 3 is "U.S. per capita availability of selected, commercially produced, fresh and processing vegetables and dry pulse crops".
 ```{r echo=TRUE, out.height=400, out.width=500, message=FALSE, warning=FALSE}
 pc <- read_xlsx('datasets/VPPT.xlsx', sheet=3)
 avg <- setNames(aggregate(pc$Value, list(pc$Year), mean), c("year", "value"))
@@ -76,10 +76,41 @@ p <- ggplot(avg, aes(year, value)) +
 ggplotly(p)
 
 ```
-(interactive ggplot with custom data frame using second data set sheet 3)
+(interactive ggplot with custom data frame using the second data set, sheet 3)
 
+Now for some python fun. Let's begin by loading R's python package.
+```{r message=FALSE, warning=FALSE, results='hide'}
+# if it is not already installed, run the following command
+# install.packages('reticulate', repos="http://cran.us.r-project.org")
+library(reticulate)
+```
+Load python's respective packages.
+```{python}
+# if they are not installed, run the following command
+# pip install pandas matplotlib
+import pandas as pd
+import matplotlib.pyplot as plt
+```
+While the last sheet used contained vegetables, this sheet contains pulses. For this instance, the sheet we are using are is sheet 6, Dry Pulse Crops: U.S. per capita availability. The header row is row 1 (zero indexing in python versus one indexing in sheets) so we need to specify this in the header argument. Executing the following commands should give us a clean data frame.
+```{python}
+df = pd.read_excel('datasets/VPPT.xlsx', sheet_name=6, header=1)
+df.info()
+```
+Well, this is interesting. If we look back on the data source, we can see how the "Year" column ended up with 58 values. There are additional notes at the bottom of the sheet. Also, we will notice some null values for a few columns. Namely the blackeye, garbanzo, pink, red kidney (dark), red kidney (light) and small red columns. The maximum number of null rows is 20(!) in both red kidney columns however, red kidney (all) has all rows.
 
+Additionally, the notes state that the total is the sum of the other columns, respectively. In this case, we can ignore many of the columns for now. Time to extract the necessary data.
 
+First, we will extract the Year and all dry edible beans for a regression model. Preliminary glance at the data shows values dropping.
+
+```{python}
+df.keys()
+```
+While trying to access the Year column, pandas kept throwing "KeyError: 'Year'". Something not noticed in the sheet... There is a trailing whitespace on the column name. using the df.keys() function, allows us to see all of the column names in raw format. Now we can strip the white space.
+```{python}
+df.rename(columns=lambda x: x.strip(), inplace=True)
+df.keys()
+```
+And just like that, it's all nice and whitespace free.
 ## Additional Questions
 
 1.  Why did 2008 and 2013 have the largest percentage change?
