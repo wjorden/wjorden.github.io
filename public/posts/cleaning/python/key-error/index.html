@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Categories // Case Studies and Problem Solving</title>
+    <title>KeyError Problems // Case Studies and Problem Solving</title>
     <link rel="shortcut icon" href="/favicon.ico" />
     <meta charset="utf-8" />
     <meta name="generator" content="Hugo 0.120.4">
@@ -56,11 +56,46 @@
     </header>
     <main class="app-container">
       
-  <article>
-    <h1>Categories</h1>
-    <ul class="tags-list">
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">KeyError Problems</h1>
+      <div class="post-meta">
+        <div>
+          
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          
+          
+          
+            Nov 27, 2023
+        </div>
+        <div>
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line>
+</svg>
+              <a class="tag" href="https://wjorden.github.io/tags/python/">python</a>
+              <a class="tag" href="https://wjorden.github.io/tags/keyerrors/">KeyErrors</a>
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <p>During my schooling, cleaning was really only covered regarding spreadsheets. Even in the advanced courses, where python dominates, there is little coverage on what to be on the look out for when using pre-compiled datasets and handling any problems you come across. So, as I run into them, I will be logging them here and other posts as required depending on the error type.</p>
+<p>In my case study covering the cost of food and imports, I ran into the KeyError: <key> does not exist problem. Thankfully, this a relatively quick fix. The &lsquo;key&rsquo; here is to get a list of all of the keys in the dataframe.</p>
+<pre tabindex="0"><code>dataframe.keys()
+</code></pre><p>This simple command, will print all of the keys in the data frame. Obvious, right? Well, this will also print any leading or trailing whitespaces that may not have been noticed when going through the dataset. To correct this:</p>
+<pre tabindex="0"><code>dataframe.rename(columns=lambda x: x.strip(), inplace=True)
+dataframe.keys()
+</code></pre><p>We can strip the whitespace and check to make sure they are, indeed, removed.
+Once confirmed, we can move on with our analysis.</p>
+    </div>
+    <div class="post-footer">
       
-    </ul>
+    </div>
   </article>
 
     </main>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ggplot on Case Studies and Problem Solving</title>
-    <link>https://wjorden.github.io/tags/ggplot/</link>
-    <description>Recent content in ggplot on Case Studies and Problem Solving</description>
+    <title>matplotlib on Case Studies and Problem Solving</title>
+    <link>https://wjorden.github.io/tags/matplotlib/</link>
+    <description>Recent content in matplotlib on Case Studies and Problem Solving</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 12 Nov 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://wjorden.github.io/tags/ggplot/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://wjorden.github.io/tags/matplotlib/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Food Import Cost Case Study</title>
       <link>https://wjorden.github.io/posts/capstones/google-data-analytics/</link>

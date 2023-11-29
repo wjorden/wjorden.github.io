@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>KeyErrors on Case Studies</title>
+    <title>KeyErrors on Case Studies and Problem Solving</title>
     <link>https://wjorden.github.io/tags/keyerrors/</link>
-    <description>Recent content in KeyErrors on Case Studies</description>
+    <description>Recent content in KeyErrors on Case Studies and Problem Solving</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 27 Nov 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://wjorden.github.io/tags/keyerrors/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>KeyError Problems</title>
-      <link>https://wjorden.github.io/key-error/</link>
+      <link>https://wjorden.github.io/posts/cleaning/python/key-error/</link>
       <pubDate>Mon, 27 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://wjorden.github.io/key-error/</guid>
-      <description>During my schooling, cleaning was really only covered regarding spreadsheets. Even in the advanced courses, where python dominates, there is little coverage on what using pre-compiled datasets and handling any problems you come across. So, as I run into them, I will be logging them here and other posts as required depending on the error type.</description>
+      <guid>https://wjorden.github.io/posts/cleaning/python/key-error/</guid>
+      <description>&lt;p&gt;During my schooling, cleaning was really only covered regarding spreadsheets. Even in the advanced courses, where python dominates, there is little coverage on what to be on the look out for when using pre-compiled datasets and handling any problems you come across. So, as I run into them, I will be logging them here and other posts as required depending on the error type.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

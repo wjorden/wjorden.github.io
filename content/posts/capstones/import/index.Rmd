@@ -4,6 +4,7 @@ title: Food Import Cost Case Study
 date: 2023-11-12
 lastmod: ["lastmod", ":git", "date", "publishDate"]
 tags: ["R", "ggplot", "python", "statistics", "matplotlib"]
+toc: true
 ---
 
 This topic was chosen as there is a lot that goes into the production of food. A level of concern was raised as it became obvious that people with various disorders are struggling to get the food items they can have. By this it is meant, those with Crohn's disease, restrictive diets due to genetics (dysautonomia, EDS, ANS, etc), as well as many others. Medications can make the lack of proper foods tolerable, but it does not solve the overall issue they have.
@@ -13,7 +14,7 @@ This topic was chosen as there is a lot that goes into the production of food. A
 
 ## Setup
 ```{r setup, include=FALSE}
-knitr::opts_knit$set(root.dir='.')
+knitr::opts_knit$set(root.dir = ".")
 ```
 The libraries in use:
 ```{r message=FALSE, warning=FALSE}
@@ -64,14 +65,14 @@ Upon further review, there are a lot of missing pieces. Namely, trade agreements
 
 Of course, we need some R plots. Sheet 3 is "U.S. per capita availability of selected, commercially produced, fresh and processing vegetables and dry pulse crops".
 ```{r echo=TRUE, out.height=400, out.width=500, message=FALSE, warning=FALSE}
-pc <- read_xlsx('datasets/VPPT.xlsx', sheet=3)
+pc <- read_xlsx("datasets/VPPT.xlsx", sheet = 3)
 avg <- setNames(aggregate(pc$Value, list(pc$Year), mean), c("year", "value"))
 
 
 p <- ggplot(avg, aes(year, value)) +
   geom_line() +
-  labs(title="Average Vegetables and Pulses Per Person") +
-  ylab('Weight per Person (lbs)') + xlab('Year')
+  labs(title = "Average Vegetables and Pulses Per Person") +
+  ylab("Weight per Person (lbs)") + xlab("Year")
 
 ggplotly(p)
 
@@ -106,11 +107,11 @@ While trying to access the Year column, pandas kept throwing "KeyError: 'Year'".
 ```{python}
 df.rename(columns=lambda x: x.strip(), inplace=True)
 df.keys()
+df = df.dropna()
 ```
 ```{python}
-# since we know that year has a few notes in addition, we can use the total rows of the pulses for the ending
-all_years=df['Year'].iloc[0:53]
-all_dry_edible=df['All dry edible beans'].iloc[0:53]
+all_years=df['Year']
+all_dry_edible=df['All dry edible beans']
 ```
 
 Time to see it in action.
@@ -120,6 +121,11 @@ plt.title('All Dry Edible Beans Per Capita')
 plt.ylabel('lbs')
 plt.xlabel('year')
 plt.show()
+```
+
+```{python}
+import seaborn as sns
+sns.pairplot(df, height=1.5)
 ```
 
 ## Additional Questions
