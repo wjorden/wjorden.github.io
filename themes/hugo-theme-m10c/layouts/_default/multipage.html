@@ -1,0 +1,28 @@
+{{ define "main" }}
+  {{ $title := .Title }}
+  {{ $paginate := .Paginate (.RegularPages.ByParam "page_number") 1 }}
+  
+  {{ range $paginate.Pages }}
+    {{ if eq $paginate.Pages }}
+      <h1>{{ $title }}</h1>
+    {{ else }}
+      <h1>{{ $title }} (continued)</h1>
+    {{ end }}
+    {{ .Content }}
+  {{ end }}
+  
+  {{- if .Site.Params.multipage.displayPaginator -}}
+    {{ if gt $paginate.TotalPages 1 }}
+      {{ template "_internal/pagination.html" . }}
+    {{ end }}
+  {{- end -}}
+  
+  {{- if .Site.Params.multipage.displayPrevAndNext -}}
+    {{ if $paginate.HasPrev }}
+      <a href="{{ $paginate.Prev.URL }}">Previous</a>
+    {{ end }}
+    {{ if $paginate.HasNext }}
+      <a href="{{ $paginator.Next.URL }}">Next</a>
+    {{ end }}
+  {{- end -}}
+{{ end }}
