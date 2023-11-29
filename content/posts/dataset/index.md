@@ -1,0 +1,21 @@
+---
+slug: dataset-list
+url: /datasets/
+title: Dataset Database Listing
+layout: single
+date: 2023-11-29
+---
+
+This is simply a list of all of the websites I use to get the data for the topics that I come across. The list includes both open-source and commercial datasets.
+
+[Data.gov](https://data.gov/) is a data source for United States governmental data. With over 250,000 datasets, there is a lot to choose from.
+
+[Census.gov](https://census.gov/data.html) is a data source regarding infrastructure, economics, commercial investments, and so much more.
+
+[Google Cloud](https://cloud.google.com/datasets), as of this post, has just over 200 free datasets available. While this is not a lot, it is a good starting point for working with BigQuery, cloud storage, and other Google services.
+
+[Nation Centers for Environment Information](https://ncei.noaa.gov/products) is a solid data source for all things environmental. From the Arctic to Upper Air Observations. While the categories are fairly specific, the datasets within are immense.
+
+[World Data](https://worlddata.ai) is, from experience, the LARGEST data platform. Over 3 billion datasets from over 8,000 sources. They even have a built-in visualizer.
+
+[Our World in Data](https://ourworldindata.org) is, for me, one of the newest in my list. I haven't had a chance to work with their datasets or see what they have, but I'm, 100% positive I'll find something in there.
