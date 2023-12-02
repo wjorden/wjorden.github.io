@@ -37,6 +37,7 @@ menu:
    #   weight: 2
 params:
   author: Jorden Williams
+  avatar: "3.jpg"
   description: Where data becomes a story.
   menu_item_separator: ' <br> '
   social:
