@@ -2,7 +2,6 @@
 slug: dataset-list
 url: /datasets/
 title: Dataset Database Listing
-layout: single
 date: 2023-11-29
 ---
 

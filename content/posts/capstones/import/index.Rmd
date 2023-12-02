@@ -4,7 +4,6 @@ title: Food Import Cost Case Study
 date: 2023-11-12
 lastmod: ["lastmod", ":git", "date", "publishDate"]
 tags: ["R", "ggplot", "python", "statistics", "matplotlib"]
-toc: true
 ---
 
 This topic was chosen as there is a lot that goes into the production of food. A level of concern was raised as it became obvious that people with various disorders are struggling to get the food items they can have. By this it is meant, those with Crohn's disease, restrictive diets due to genetics (dysautonomia, EDS, ANS, etc), as well as many others. Medications can make the lack of proper foods tolerable, but it does not solve the overall issue they have.
