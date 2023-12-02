@@ -1,0 +1,12 @@
+---
+slug: SBA Loans Post Pandemic
+title: How much has PPP really hurt the economy?
+date: 2023-12-2
+lastmod: ["lastmod", ":git", "date", "publishDate"]
+tags: ["MSSQL", "T-SQL", "SSIS", "SSMS"]
+layout: single
+---
+
+This started out as a guided project to learn T-SQL(MSSQLSERVER), SQL Server Integration Service (SSIS), and SQL Server Management Studio (SSMS). However, I realized something a little... weird. Doing a little digging, we know that the Small Business Administration (SBA) is a federal program. The SBA connects entrepreneurs with lenders to help small businesses keep their doors open and employees paid. 
+
+<!--more-->
