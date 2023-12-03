@@ -362,7 +362,7 @@ These values are as expected. 2020 was the outbreak so Health Care is expected t
 ## Results
 
 1. In 2020, SBA was 38.6% over budget.
-2. In 2021, SBA was 25% under budget.
+2. In 2021, SBA was 25.65% under budget.
 3. Combined there was a net loss of 23.14%.
 The formula for this is:
 ```
