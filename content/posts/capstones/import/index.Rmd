@@ -13,6 +13,7 @@ This topic was chosen as there is a lot that goes into the production of food. A
 
 ## Setup
 ```{r setup, include=FALSE}
+library(knitr)
 knitr::opts_knit$set(root.dir = ".")
 ```
 The libraries in use:
@@ -100,7 +101,7 @@ Well, this is interesting. If we look back on the data source, we can see how th
 
 Additionally, the notes state that the total is the sum of the other columns, respectively. In this case, we can ignore many of the columns for now. Time to extract the necessary data.
 
-First, we will extract the Year and all dry edible beans for a regression model. Preliminary glance at the data shows values dropping. 
+First, we will extract the Year and all dry edible beans. Preliminary glance at the data shows values dropping. 
 
 While trying to access the Year column, pandas kept throwing "KeyError: 'Year'". Something not noticed in the sheet... There is a trailing whitespace on the column name.
 ```{python}
@@ -120,11 +121,6 @@ plt.title('All Dry Edible Beans Per Capita')
 plt.ylabel('lbs')
 plt.xlabel('year')
 plt.show()
-```
-
-```{python}
-import seaborn as sns
-sns.pairplot(df, height=1.5)
 ```
 
 ## Additional Questions
