@@ -3,7 +3,7 @@ slug: google-data-analytics
 title: Food Import Cost Case Study
 date: 2023-11-12
 lastmod: ["lastmod", ":git", "date", "publishDate"]
-tags: ["R", "ggplot", "python", "statistics", "matplotlib"]
+tags: ["R", "ggplot", "python", "statistics", "plotnine"]
 ---
 
 This topic was chosen as there is a lot that goes into the production of food. A level of concern was raised as it became obvious that people with various disorders are struggling to get the food items they can have. By this it is meant, those with Crohn's disease, restrictive diets due to genetics (dysautonomia, EDS, ANS, etc), as well as many others. Medications can make the lack of proper foods tolerable, but it does not solve the overall issue they have.
@@ -102,19 +102,38 @@ library(reticulate)
 Load python's respective packages.
 ```{python}
 # if they are not installed, run the following command
-# pip install pandas matplotlib
+# pip install pandas plotnine
 import pandas as pd
-import matplotlib.pyplot as plt
+# import ggplot
+from plotnine import *
+import textwrap
+def wrap(string, max_width):
+  return '\n'.join(textwrap.wrap(string, max_width))
 ```
 Now, we're going to load up a CSV containing the cost of vegetables.
 ```{python}
 df = pd.read_csv('datasets/veggies-2020.csv')
 df.info()
 ```
-Now we have different forms of vegetables, retail price, and so much more. The key columns here are going to be the name, Form, RetailPrice, and Yield. Why yield? Well, depending on how you use them, you may lose a good amount of of what you purchased. Something not usually considered when buying vegetables.
 
-## Additional Questions
+Now we have different forms of vegetables, retail price, and so much more. The key columns are going to be the name, Form, RetailPrice, and Yield. Why yield? Well, depending on how you use them, you may lose a good amount of of what you purchased. Something not usually considered when buying vegetables.
+
+Lets make a bar chart with the RetailPrice data.
+```{python message=FALSE, results=FALSE}
+# sort values for a cleaner appearance
+x = df['Vegetable']
+y = df['RetailPrice']
+
+# currently the vegetable names are overlapping. I'm still trying to figure out
+# how to best handle this. textwrap causes 'aes is not defined',
+# cannot set guide using n.dodge, 
+(ggplot(df, aes('reorder(x, y)', y, fill=df['Form'])) + 
+  geom_col(position='identity') + scale_fill_manual(['red', 'blue', 'green', 'orange']) + coord_flip() + 
+  labs(x='Vegetable', y='Retail Price in USD') + theme(axis_text_y=element_text(size=8)))
+```
+
+## Additional Questions Collected While Working
 
 1.  Why did 2008 and 2013 have the largest percentage change?
 2.  In the line chart, we see a steep drop at 1980, what happened?
-3.  In the line chart, we see a spike at 2020, what happened? 
+3.  In the line chart, we see a spike at 2020, what happened?
