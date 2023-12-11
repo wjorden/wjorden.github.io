@@ -10,17 +10,25 @@
     <atom:link href="https://wjorden.github.io/capstones/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Food Import Cost Case Study</title>
-      <link>https://wjorden.github.io/posts/capstones/google-data-analytics/</link>
+      <link>https://wjorden.github.io/posts/capstones/google/google-data-analytics/</link>
       <pubDate>Sun, 12 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://wjorden.github.io/posts/capstones/google-data-analytics/</guid>
-      <description>&lt;script src=&#34;https://wjorden.github.io/posts/capstones/google-data-analytics/index_files/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://wjorden.github.io/posts/capstones/google-data-analytics/index_files/plotly-binding/plotly.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://wjorden.github.io/posts/capstones/google-data-analytics/index_files/typedarray/typedarray.min.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://wjorden.github.io/posts/capstones/google-data-analytics/index_files/jquery/jquery.min.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;https://wjorden.github.io/posts/capstones/google-data-analytics/index_files/crosstalk/css/crosstalk.min.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;https://wjorden.github.io/posts/capstones/google-data-analytics/index_files/crosstalk/js/crosstalk.min.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;https://wjorden.github.io/posts/capstones/google-data-analytics/index_files/plotly-htmlwidgets-css/plotly-htmlwidgets.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;https://wjorden.github.io/posts/capstones/google-data-analytics/index_files/plotly-main/plotly-latest.min.js&#34;&gt;&lt;/script&gt;
+      <guid>https://wjorden.github.io/posts/capstones/google/google-data-analytics/</guid>
+      <description>&lt;script src=&#34;https://wjorden.github.io/posts/capstones/google/google-data-analytics/index_files/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://wjorden.github.io/posts/capstones/google/google-data-analytics/index_files/plotly-binding/plotly.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://wjorden.github.io/posts/capstones/google/google-data-analytics/index_files/typedarray/typedarray.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://wjorden.github.io/posts/capstones/google/google-data-analytics/index_files/jquery/jquery.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://wjorden.github.io/posts/capstones/google/google-data-analytics/index_files/crosstalk/css/crosstalk.min.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://wjorden.github.io/posts/capstones/google/google-data-analytics/index_files/crosstalk/js/crosstalk.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://wjorden.github.io/posts/capstones/google/google-data-analytics/index_files/plotly-htmlwidgets-css/plotly-htmlwidgets.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://wjorden.github.io/posts/capstones/google/google-data-analytics/index_files/plotly-main/plotly-latest.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://wjorden.github.io/posts/capstones/google/google-data-analytics/index_files/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://wjorden.github.io/posts/capstones/google/google-data-analytics/index_files/plotly-binding/plotly.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://wjorden.github.io/posts/capstones/google/google-data-analytics/index_files/typedarray/typedarray.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://wjorden.github.io/posts/capstones/google/google-data-analytics/index_files/jquery/jquery.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://wjorden.github.io/posts/capstones/google/google-data-analytics/index_files/crosstalk/css/crosstalk.min.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://wjorden.github.io/posts/capstones/google/google-data-analytics/index_files/crosstalk/js/crosstalk.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://wjorden.github.io/posts/capstones/google/google-data-analytics/index_files/plotly-htmlwidgets-css/plotly-htmlwidgets.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://wjorden.github.io/posts/capstones/google/google-data-analytics/index_files/plotly-main/plotly-latest.min.js&#34;&gt;&lt;/script&gt;
 &lt;p&gt;This topic was chosen as there is a lot that goes into the production of food. A level of concern was raised as it became obvious that people with various disorders are struggling to get the food items they can have. By this it is meant, those with Crohn’s disease, restrictive diets due to genetics (dysautonomia, EDS, ANS, etc), as well as many others. Medications can make the lack of proper foods tolerable, but it does not solve the overall issue they have.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -6,20 +6,76 @@
     <description>Recent content in Tags on Case Studies and Problem Solving</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 27 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 11 Dec 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://wjorden.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>python</title>
+      <link>https://wjorden.github.io/tags/python/</link>
+      <pubDate>Mon, 11 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://wjorden.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>scikit-learn</title>
+      <link>https://wjorden.github.io/tags/scikit-learn/</link>
+      <pubDate>Mon, 11 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://wjorden.github.io/tags/scikit-learn/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>statistics</title>
+      <link>https://wjorden.github.io/tags/statistics/</link>
+      <pubDate>Mon, 11 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://wjorden.github.io/tags/statistics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>xgboost</title>
+      <link>https://wjorden.github.io/tags/xgboost/</link>
+      <pubDate>Mon, 11 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://wjorden.github.io/tags/xgboost/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>data-collecting</title>
+      <link>https://wjorden.github.io/tags/data-collecting/</link>
+      <pubDate>Thu, 07 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://wjorden.github.io/tags/data-collecting/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MSSQL</title>
+      <link>https://wjorden.github.io/tags/mssql/</link>
+      <pubDate>Sat, 02 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://wjorden.github.io/tags/mssql/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SSIS</title>
+      <link>https://wjorden.github.io/tags/ssis/</link>
+      <pubDate>Sat, 02 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://wjorden.github.io/tags/ssis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SSMS</title>
+      <link>https://wjorden.github.io/tags/ssms/</link>
+      <pubDate>Sat, 02 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://wjorden.github.io/tags/ssms/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>T-SQL</title>
+      <link>https://wjorden.github.io/tags/t-sql/</link>
+      <pubDate>Sat, 02 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://wjorden.github.io/tags/t-sql/</guid>
+      <description></description>
+    </item>
     <item>
       <title>KeyErrors</title>
       <link>https://wjorden.github.io/tags/keyerrors/</link>
       <pubDate>Mon, 27 Nov 2023 00:00:00 +0000</pubDate>
       <guid>https://wjorden.github.io/tags/keyerrors/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>python</title>
-      <link>https://wjorden.github.io/tags/python/</link>
-      <pubDate>Mon, 27 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://wjorden.github.io/tags/python/</guid>
       <description></description>
     </item>
     <item>
@@ -30,10 +86,10 @@
       <description></description>
     </item>
     <item>
-      <title>matplotlib</title>
-      <link>https://wjorden.github.io/tags/matplotlib/</link>
+      <title>plotnine</title>
+      <link>https://wjorden.github.io/tags/plotnine/</link>
       <pubDate>Sun, 12 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://wjorden.github.io/tags/matplotlib/</guid>
+      <guid>https://wjorden.github.io/tags/plotnine/</guid>
       <description></description>
     </item>
     <item>
@@ -41,13 +97,6 @@
       <link>https://wjorden.github.io/tags/r/</link>
       <pubDate>Sun, 12 Nov 2023 00:00:00 +0000</pubDate>
       <guid>https://wjorden.github.io/tags/r/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>statistics</title>
-      <link>https://wjorden.github.io/tags/statistics/</link>
-      <pubDate>Sun, 12 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://wjorden.github.io/tags/statistics/</guid>
       <description></description>
     </item>
   </channel>

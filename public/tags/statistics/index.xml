@@ -6,21 +6,46 @@
     <description>Recent content in statistics on Case Studies and Problem Solving</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 12 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 11 Dec 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://wjorden.github.io/tags/statistics/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Diabetes XGBoost testing</title>
+      <link>https://wjorden.github.io/posts/capstones/python/scikit-learn/</link>
+      <pubDate>Mon, 11 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://wjorden.github.io/posts/capstones/python/scikit-learn/</guid>
+      <description>Steps Load the “diabetes.csv” dataset using Pandas ✓ Split the data into 80% for training and 20% for testing ✓ Train an XG-Boost classifier model using SK-Learn Library ✓ Assess trained model performance ✓ Plot the confusion matrix ✓ Print the classification report ✓ Before beginning, I am using RStudio meaning loading R’s reticulate library is first.
+library(reticulate) Now, import all of the required Python libraries.
+import pandas as pd import numpy as np import seaborn as sns import matplotlib.</description>
+    </item>
+    <item>
+      <title>COVID-19 Study</title>
+      <link>https://wjorden.github.io/posts/covid-analysis/</link>
+      <pubDate>Tue, 05 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://wjorden.github.io/posts/covid-analysis/</guid>
+      <description>&lt;h2 id=&#34;dataset&#34;&gt;Dataset&lt;/h2&gt;
+&lt;p&gt;The dataset for this project is from &lt;a href=&#34;https://www.kaggle.com/datasets/thedevastator/global-covid-19-data&#34;&gt;Kaggle&lt;/a&gt;. You know the deal, load the R python library and necessary python packages, load the csv into a pandas dataframe.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Food Import Cost Case Study</title>
-      <link>https://wjorden.github.io/posts/capstones/google-data-analytics/</link>
+      <link>https://wjorden.github.io/posts/capstones/google/google-data-analytics/</link>
       <pubDate>Sun, 12 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://wjorden.github.io/posts/capstones/google-data-analytics/</guid>
-      <description>&lt;script src=&#34;https://wjorden.github.io/posts/capstones/google-data-analytics/index_files/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://wjorden.github.io/posts/capstones/google-data-analytics/index_files/plotly-binding/plotly.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://wjorden.github.io/posts/capstones/google-data-analytics/index_files/typedarray/typedarray.min.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://wjorden.github.io/posts/capstones/google-data-analytics/index_files/jquery/jquery.min.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;https://wjorden.github.io/posts/capstones/google-data-analytics/index_files/crosstalk/css/crosstalk.min.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;https://wjorden.github.io/posts/capstones/google-data-analytics/index_files/crosstalk/js/crosstalk.min.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;https://wjorden.github.io/posts/capstones/google-data-analytics/index_files/plotly-htmlwidgets-css/plotly-htmlwidgets.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;https://wjorden.github.io/posts/capstones/google-data-analytics/index_files/plotly-main/plotly-latest.min.js&#34;&gt;&lt;/script&gt;
+      <guid>https://wjorden.github.io/posts/capstones/google/google-data-analytics/</guid>
+      <description>&lt;script src=&#34;https://wjorden.github.io/posts/capstones/google/google-data-analytics/index_files/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://wjorden.github.io/posts/capstones/google/google-data-analytics/index_files/plotly-binding/plotly.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://wjorden.github.io/posts/capstones/google/google-data-analytics/index_files/typedarray/typedarray.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://wjorden.github.io/posts/capstones/google/google-data-analytics/index_files/jquery/jquery.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://wjorden.github.io/posts/capstones/google/google-data-analytics/index_files/crosstalk/css/crosstalk.min.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://wjorden.github.io/posts/capstones/google/google-data-analytics/index_files/crosstalk/js/crosstalk.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://wjorden.github.io/posts/capstones/google/google-data-analytics/index_files/plotly-htmlwidgets-css/plotly-htmlwidgets.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://wjorden.github.io/posts/capstones/google/google-data-analytics/index_files/plotly-main/plotly-latest.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://wjorden.github.io/posts/capstones/google/google-data-analytics/index_files/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://wjorden.github.io/posts/capstones/google/google-data-analytics/index_files/plotly-binding/plotly.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://wjorden.github.io/posts/capstones/google/google-data-analytics/index_files/typedarray/typedarray.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://wjorden.github.io/posts/capstones/google/google-data-analytics/index_files/jquery/jquery.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://wjorden.github.io/posts/capstones/google/google-data-analytics/index_files/crosstalk/css/crosstalk.min.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://wjorden.github.io/posts/capstones/google/google-data-analytics/index_files/crosstalk/js/crosstalk.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://wjorden.github.io/posts/capstones/google/google-data-analytics/index_files/plotly-htmlwidgets-css/plotly-htmlwidgets.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://wjorden.github.io/posts/capstones/google/google-data-analytics/index_files/plotly-main/plotly-latest.min.js&#34;&gt;&lt;/script&gt;
 &lt;p&gt;This topic was chosen as there is a lot that goes into the production of food. A level of concern was raised as it became obvious that people with various disorders are struggling to get the food items they can have. By this it is meant, those with Crohn’s disease, restrictive diets due to genetics (dysautonomia, EDS, ANS, etc), as well as many others. Medications can make the lack of proper foods tolerable, but it does not solve the overall issue they have.&lt;/p&gt;</description>
     </item>
   </channel>
