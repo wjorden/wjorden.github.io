@@ -59,15 +59,17 @@ Upon further review, there are a lot of missing pieces. Namely, trade agreements
 
 # Charts
 
-![2022 US Imports (Spreadsheet)](img/2022-US-Imports.png)
+![2022 US Imports (Spreadsheet)](img/2022-US-Imports.png)  
+This is the breakdown of all the imported food and preparatory items, by category.
 
-![US Imported Food YoY (Spreadsheet)](img/US-Imported-Food-Price-Change.png)
+![US Imported Food YoY (Spreadsheet)](img/US-Imported-Food-Price-Change.png)  
+This chart is rather misleading when first looking at it. While the data used to prepare this chart is accurate, it does not take into account trade agreements. There is a possibility that that the true change is much flatter. The data does not make a distinction towards either true expense or expense minus trades.
 
-Of course, we need some R plots. Sheet 3 is "U.S. per capita availability of selected, commercially produced, fresh and processing vegetables and dry pulse crops".
+Now, for some R plots. Sheet 3 is "U.S. per capita availability of selected, commercially produced, fresh and processing vegetables and dry pulse crops".
 ```{r echo=TRUE, out.height=400, out.width=500, message=FALSE, warning=FALSE}
 pc <- read_xlsx("datasets/VPPT.xlsx", sheet = 3)
-avg <- setNames(aggregate(pc$Value, list(pc$Year), mean), c("year", "value"))
 
+avg <- setNames(aggregate(pc$Value, list(pc$Year), FUN= function(x) round(mean(x), 2)), c("year", "value"))
 
 p <- ggplot(avg, aes(year, value)) +
   geom_line() +
@@ -75,9 +77,21 @@ p <- ggplot(avg, aes(year, value)) +
   ylab("Weight per Person (lbs)") + xlab("Year")
 
 ggplotly(p)
-
 ```
-(interactive ggplot with custom data frame using the second data set, sheet 3)
+Keep in mind, this is for the <strong>WHOLE YEAR</strong>.
+
+For a month-to-month basis, we would need to divide the value by 12.
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+avg_monthly <- setNames(aggregate(pc$Value, list(pc$Year), FUN= function(x) round(mean(x)/12, 2)), c("year", "value"))
+
+p2 <- ggplot(avg_monthly, aes(year, value)) +
+  geom_line() +
+  labs(title = "Average Vegetables and Pulses Per Person Per Month") +
+  ylab("Weight per Person (lbs)") + xlab("Year")
+
+ggplotly(p2)
+```
+
 
 Now for some python fun. Let's begin by loading R's python package.
 ```{r message=FALSE, warning=FALSE, results='hide'}
@@ -92,36 +106,12 @@ Load python's respective packages.
 import pandas as pd
 import matplotlib.pyplot as plt
 ```
-While the last sheet used contained vegetables, this sheet contains pulses. For this instance, the sheet we are using are is sheet 6, Dry Pulse Crops: U.S. per capita availability. The header row is row 1 (zero indexing in python versus one indexing in sheets) so we need to specify this in the header argument. Executing the following commands should give us a clean data frame.
+Now, we're going to load up a CSV containing the cost of vegetables.
 ```{python}
-df = pd.read_excel('datasets/VPPT.xlsx', sheet_name=6, header=1)
+df = pd.read_csv('datasets/veggies-2020.csv')
 df.info()
 ```
-Well, this is interesting. If we look back on the data source, we can see how the "Year" column ended up with 58 values. There are additional notes at the bottom of the sheet. Also, we will notice some null values for a few columns. Namely the blackeye, garbanzo, pink, red kidney (dark), red kidney (light) and small red columns. The maximum number of null rows is 20(!) in both red kidney columns however, red kidney (all) has all rows.
-
-Additionally, the notes state that the total is the sum of the other columns, respectively. In this case, we can ignore many of the columns for now. Time to extract the necessary data.
-
-First, we will extract the Year and all dry edible beans. Preliminary glance at the data shows values dropping. 
-
-While trying to access the Year column, pandas kept throwing "KeyError: 'Year'". Something not noticed in the sheet... There is a trailing whitespace on the column name.
-```{python}
-df.rename(columns=lambda x: x.strip(), inplace=True)
-df.keys()
-df = df.dropna()
-```
-```{python}
-all_years=df['Year']
-all_dry_edible=df['All dry edible beans']
-```
-
-Time to see it in action.
-```{python}
-plt.bar(all_years, all_dry_edible)
-plt.title('All Dry Edible Beans Per Capita')
-plt.ylabel('lbs')
-plt.xlabel('year')
-plt.show()
-```
+Now we have different forms of vegetables, retail price, and so much more. The key columns here are going to be the name, Form, RetailPrice, and Yield. Why yield? Well, depending on how you use them, you may lose a good amount of of what you purchased. Something not usually considered when buying vegetables.
 
 ## Additional Questions
 
