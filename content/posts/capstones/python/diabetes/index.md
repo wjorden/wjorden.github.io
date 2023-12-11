@@ -8,7 +8,7 @@ tags: ["python", "statistics", "scikit-learn", "xgboost"]
 
 ## Steps
 
-1.  Load the “diabetes.csv” dataset using Pandas ✓  
+1.  Load the [diabetes.csv](https://github.com/wjorden/wjorden.github.io/blob/main/content/posts/capstones/python/diabetes/dataset/diabetes.csv) dataset using Pandas ✓  
 2.  Split the data into 80% for training and 20% for testing ✓
 3.  Train an XG-Boost classifier model using SK-Learn Library ✓  
 4.  Assess trained model performance ✓  
