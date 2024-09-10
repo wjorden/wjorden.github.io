@@ -27,7 +27,7 @@ jobs:
          go-version: ${{ matrix.go-version }}
 
     - name: Install deps
-      run: 
+      run: |
         go get .
         go get github.com/a-h/templ
       
