@@ -29,7 +29,26 @@ jobs:
     - name: Install deps
       run:
         go get github.com/a-h/templ
-      
+    
+    - name: templ-generator-action
+      # uses: capthiron/templ-generator-action@f1f7b5d0b261eccff32fa3fc17cf563d993fee94
+      uses: capthiron/templ-generator-action@v1
+      with:
+        # The directory where to look for .templ files.
+        directory: "./internal/views"
+        # Flag to enable or disable committing changes.
+        # using default (true)
+        # Custom commit message for the generated code.
+        # using default (chore: Generate templ code)
+        # Flag to enable or disable formatting the generated code.
+        # using default (true)
+        # Flag to enable or disable setting up Go.
+        # using default (true)
+        # The Go version to use.
+        go-version: '1.23.x'
+        # The templ version to use.
+        # using default (latest)
+          
     - name: Build
       run:
         templ generate
