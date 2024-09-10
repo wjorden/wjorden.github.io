@@ -20,11 +20,6 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v4.1.7
-      
-    - name: Set up Go '1.23'
-      uses: actions/setup-go@v5
-      with:
-         go-version: ${{ matrix.go-version }}
 
     - name: Install deps
       run:
@@ -56,4 +51,4 @@ jobs:
         go build -v ./...
     
     - name: Run
-      run: go -v ./main
+      run: go run ./cmd/server/main.go
