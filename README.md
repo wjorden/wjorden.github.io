@@ -1,3 +1,4 @@
+[![Go](https://github.com/CaffeineOrDeath/CaffeineOrDeath.github.io/actions/workflows/go.yml/badge.svg?branch=main)](https://github.com/CaffeineOrDeath/CaffeineOrDeath.github.io/actions/workflows/go.yml)
 # NOTE
 
 I'm currently doing a complete re-write of this. Instead of using Hugo and Blogdown, I'm switching everything over to
