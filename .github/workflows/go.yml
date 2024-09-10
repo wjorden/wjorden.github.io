@@ -56,4 +56,4 @@ jobs:
         go build -v ./...
     
     - name: Run
-      run: go run -v ./main
+      run: go -v ./main
