@@ -37,7 +37,8 @@ jobs:
         # The directory where to look for .templ files.
         directory: "./internal/views"
         # Flag to enable or disable committing changes.
-        # using default (true)
+        # using branch protection breaks this, need PAT to use
+        commit: false
         # Custom commit message for the generated code.
         # using default (chore: Generate templ code)
         # Flag to enable or disable formatting the generated code.
