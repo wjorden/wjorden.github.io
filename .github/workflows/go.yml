@@ -49,6 +49,3 @@ jobs:
       run:
         templ generate
         go build -v ./...
-    
-    - name: Run
-      run: ./main
