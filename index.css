@@ -1,26 +1,18 @@
 main {
     display: flex;
-    flex-flow: column;
     flex: 1 1 auto;
+    flex-flow: column;
     overflow-y: auto;
-    text-align: center;
     margin: auto;
     height: 100%;
+    text-align: center;
 }
 
 main > h3 {
     text-align: inherit;
     margin: inherit;
     width: 70%;
-    padding-top: 5%;
-    justify-content: center;
-}
-
-main > p {
-    text-align: inherit;
-    margin: inherit;
-    width: 70%;
-    padding-top: 5%;
+    padding-top: 15%;
     justify-content: center;
 }
 
@@ -36,11 +28,11 @@ nav > a {
 }
 
 footer {
-    text-align: center;
-    background-color: #965A5A;
-    color: #413939;
     position: absolute;
     bottom: 0;
     margin: auto;
     width: 100%;
+    text-align: center;
+    background-color: #965A5A;
+    color: #413939;
 }

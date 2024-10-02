@@ -1,3 +1,37 @@
 main {
+    display: flex;
+    flex-flow: column;
+    flex: 1 1 auto;
+    overflow-y: auto;
     text-align: center;
+    margin: auto;
+    height: 100%;
+}
+
+main > p {
+    text-align: inherit;
+    margin: inherit;
+    width: 70%;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    background-color: #965A5A;
+}
+
+nav > a {
+    align-self: flex-end;
+    margin-bottom: 0;
+    color: #413939;
+}
+
+footer {
+    text-align: center;
+    background-color: #965A5A;
+    color: #413939;
+    position: absolute;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
 }
