@@ -14,11 +14,11 @@
         <title>Krampus Tech</title>
     </head>
     <body>
-        <nav class="navbar">
+        <nav class="big navbar">
             <a class="navbar-brand" href="/">
                 <img src="/static/sm-krampus-tech.png" alt="Krampus Tech Logo"/>
             </a>
-            <div class="big">
+            <div class="menu-content">
                 <a class="nav-link" href="/"><p>Home</p></a>
                 <a class="nav-link" href="/pages/data/index.html"><p>Data Analysis</p></a>
                 <a class="nav-link" href="/pages/embed/index.html"><p>Embedded</p></a>
@@ -26,6 +26,7 @@
                 <a class="nav-link" href="/pages/contact/index.html"><p>Contact</p></a>
             </div>
             <div class="mini navbar">
+                <img src="/static/sm-krampus-tech.png" alt="Krampus Tech Logo"/>
                 <div class="menu">
                     <i class="fa-solid fa-bars"></i>
                     <div class="menu-content">
