@@ -25,6 +25,7 @@ main > p {
 }
 
 nav {
+    position: fixed;
     display: flex;
     background-color: #965A5A;
 }
@@ -36,6 +37,7 @@ nav > a {
 }
 
 footer {
+    position: fixed;
     text-align: center;
     background-color: #965A5A;
     color: #413939;

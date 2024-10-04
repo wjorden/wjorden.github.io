@@ -17,6 +17,8 @@ main > h3 {
 }
 
 nav {
+    position: fixed;
+    top: 0;
     display: flex;
     background-color: #965A5A;
 }
@@ -31,7 +33,7 @@ footer {
     text-align: center;
     background-color: #965A5A;
     color: #413939;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     margin: auto;
     width: 100%;

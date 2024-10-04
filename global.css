@@ -1,0 +1,71 @@
+body {
+    position: absolute;
+    background-size: cover;
+    background-attachmen: fixed;
+}
+
+main {
+    flex: 1 1 auto;
+    flex-flow: column;
+    overflow-y: scroll;
+    text-align: center;
+    margin: auto;
+    margin-top: 3%;
+}
+
+main > h3 {
+    text-align: inherit;
+    margin: inherit;
+    width: 70%;
+    padding-top: 5%;
+    justify-content: center;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    background-color: #965A5A;
+}
+
+nav > a {
+    align-self: flex-end;
+    margin-bottom: 0;
+    text-decoration: none;
+    color: #413939;
+}
+
+nav > .mini {
+    display: none;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    background-color: #965A5A;
+    color: #413939;
+}
+
+@media screen and (max-width: 600px){
+    .big {
+        display: none;
+    }
+    
+    nav > .mini {
+        display: block;       
+        color: black;
+        align-self: flex-end;
+    }
+
+    div > .menu-content {
+        display: hidden;
+    }
+
+    nav > a > p {
+        display: hidden;
+    }
+}
