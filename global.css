@@ -27,17 +27,6 @@ nav {
     background-color: #965A5A;
 }
 
-nav > div > .menu-content {
-    justify-content: flex-end;
-    bottom: 0;
-    text-decoration: none;
-    color: #413939;
-}
-
-nav > .mini {
-    display: none;
-}
-
 footer {
     position: fixed;
     bottom: 0;
@@ -48,22 +37,3 @@ footer {
     color: #413939;
 }
 
-@media screen and (max-width: 600px) {
-    .big {
-        display: none;
-    }
-    
-    nav > .mini {     
-        display: block;       
-        color: black;
-        align-self: flex-end;
-    }
-
-    nav > .menu-content {
-        display: hidden;
-    }
-
-    nav > a > p {
-        display: hidden;
-    }
-}
