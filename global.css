@@ -4,12 +4,14 @@ body {
     margin-left: 5em;
     margin-right: 5em;
     justify-content: center;
+    overflow: hidden;
 }
 
 .nav-container {
     display: flex;
-    position: fixed;
+    flex-direction: row;
     width: 50vw;
+    position: fixed;
     top: 0;
     justify-content: center;
     background-color: #965A5A;
@@ -46,8 +48,9 @@ a {
 
 .footer-container {
     display: flex;
-    position: fixed;
+    flex-direction: row;
     width: 50vw;
+    position: fixed;
     justify-content: center;
     bottom: 0;
     background-color: #965A5A;
