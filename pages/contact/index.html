@@ -3,29 +3,28 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--[if lt IE 9]>
-	        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-	<![endif]-->
-	<!-- add font awesome for icons -->
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-       
+        <!-- global css -->
         <link rel="stylesheet" type="text/css" href="/global.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- add font awesome for icons -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <!--jQuery for future -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
         <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
         <title>Krampus Tech</title>
     </head>
     <body>
-         <nav class="navbar">
-            <a class="navbar-brand" href="/">
+        <div class="nav-container">
+	        <a class="navbar-logo" href="/">
                 <img src="/static/sm-krampus-tech.png" alt="Krampus Tech Logo"/>
             </a>
-                <a href="/"><i class="fa-solid fa-house nc"></i></a>
-                <a href="/pages/data/index.html"><i class="fa-solid fa-chart-simple nc"></i></a>
-                <a href="/pages/embed/index.html"><i class="fas fa-microchip nc"></i></a>
-                <a href="/pages/about/index.html"><i class="fa-solid fa-circle-info nc"></i></a>
-                <a href="/pages/contact/index.html"><i class="fa-solid fa-envelope nc"></i></a>
-        </nav>
-        <main>
+	        <div class="nav-content">
+                <a class="nc" href="/"><i class="fa-solid fa-house nc"></i> Home</a>
+                <a class="nc" href="/pages/data/index.html"><i class="fa-solid fa-chart-simple nc"></i> Analysis</a>
+                <a class="nc" href="/pages/embed/index.html"><i class="fas fa-microchip nc"></i> Embeded</a>
+                <a class="nc" href="/pages/about/index.html"><i class="fa-solid fa-circle-info nc"></i> About</a>
+                <a class="nc" href="/pages/contact/index.html"><i class="fa-solid fa-envelope nc"></i> Contact</a>                </div> <!-- nav-content -->
+            </div> <!-- nav-container -->
+        <div class="content-container">
             <h3>
                Hey There!
             </h3>
@@ -48,10 +47,12 @@
                 </a>
                 is the person to reach.
             </p>
-        </main>
+        </div>
     </body>
-    <footer>
-        Krampus Tech &copy; 2024
-    </footer>
+    <div class="footer-container">
+        <div class="m-footer">
+            Krampus Tech &copy; 2024
+        </div>  <!-- m-footer -->
+    </div> <!-- footer-container -->
 </html>
 
